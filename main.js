@@ -6,7 +6,8 @@ const chalk = require('./node_modules/chalk');
 
 console.log("it is " + chalk.yellow(moment().format("dddd, MMMM Do YYYY, h:mm:ss a")));
 console.log("it is the " + chalk.cyan(moment().format("DDD")) + " of the year");
-console.log("it is " + chalk.magentaBright(moment().format("X")) + " seconds into the day");
+console.log("It is the " + chalk.blue(moment().format("k")*3600) + chalk.blue(moment().format("m")*60)+chalk.blue(moment().format("ss")) + " second of the day");
+
 
 if (moment(["YYYY"]).isLeapYear() === true){
   console.log("it " + chalk.blue("is") + "a leap year");
